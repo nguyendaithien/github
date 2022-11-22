@@ -1,0 +1,22 @@
+// tim phan tu lon nhat cua mang bang con tro P
+#include<conio.h>
+#include<stdio.h>
+int main () {
+        int mang[10];
+        int *p;
+        int max=0;
+        for ( int i =0 ; i<=9 ; i++) {
+                scanf ("%d\n", &mang[i]) ;
+        }
+        for (int j =0; j<=9 ; j++) {
+                p= &mang[j];
+                if( *p > max) {
+                        max = *p;
+                }
+                else
+                        max =max ;
+        }
+        printf ( "gia tri lon nhat cua mang: %d\n", max) ;
+        return 0;
+}
+
